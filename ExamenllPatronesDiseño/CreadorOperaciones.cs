@@ -8,7 +8,7 @@ namespace ExamenllPatronesDiseño
 {
     class CreadorOperaciones
     {
-        public IOperacion GetPeople(TipoOperacion tipo)
+        public IOperacion ObtenerOperacion(TipoOperacion tipo)
         {
             IOperacion operacion = null;
             switch (tipo)
