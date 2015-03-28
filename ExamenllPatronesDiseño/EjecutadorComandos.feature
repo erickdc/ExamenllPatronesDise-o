@@ -1,4 +1,4 @@
-﻿Feature: EjecutadorComandos
+﻿Feature: EjecutadorComandosPasos
 	Para poder realizar operaciones aritmeticas
 	Como estudiante quiero ver
 	la suma ,resta y multiplicacion de dos operandos
@@ -21,10 +21,10 @@ Scenario: Mutiplicar dos numeros
 
 Scenario: Ejecutar Lista de operaciones Aritmeticas
 	Given  la lista de operaciones aritmeticas
-	| Operando1 | Operando2 |	  Operacion    |
-	| 1         | 3         |	   Suma	       |
-	| 5         | 6         |	   Resta	   |
-	| 3         | 4         |  Multiplicacion  |
+	| Operacion        | Operando1    | Operando2 |
+	| Suma             |    1         | 3         |
+	| Resta            |    5         | 6         |  
+	| Multiplicacion   |    3         | 4         |  
 
 	When Se ejecutan todas las operaciones
 	
@@ -33,4 +33,18 @@ Scenario: Ejecutar Lista de operaciones Aritmeticas
 	|    4	    |
 	|   -1      |
 	|    12		|
+
+Scenario: Ejecutar Lista de operaciones Aritmeticas Desde Archivo
+	Given  la lista de operaciones aritmeticas guardadas en el archivo
+	| Operacion        | Operando1    | Operando2 |
+	| Suma             |    1         | 3         |
+	| Resta            |    5         | 6         |  
+	| Multiplicacion   |    3         | 4         |  
+
+	When Se ejecutan todas las operaciones que salen del archivo
 	
+	Then este resultado debe ser el siguiente
+	| Resultado | 
+	|    4	    |
+	|   -1      |
+	|    12		|

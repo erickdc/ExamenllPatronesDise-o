@@ -20,7 +20,7 @@ namespace ExamenllPatronesDiseño
         [Given(@"que se hayan ejecutado las siguientes operaciones con los siguientes resultados")]
         public void GivenQueSeHayanEjecutadoLasSiguientesOperacionesConLosSiguientesResultados(Table table)
         {
-            _resultados = UtilidadPrueba.ConvertirDeTablaArregloEntero(table);
+            _resultados = UtilidadPrueba.ConvertirDeTablaResultadoArregloEntero(table);
            
             log = new SumadorLog(log,_resultados[0]);
             log = new RestadorLog(log,_resultados[1]);

@@ -9,11 +9,15 @@ using TechTalk.SpecFlow.Assist;
 
 namespace ExamenllPatronesDiseño
 {
-    class UtilidadPrueba
+    internal class UtilidadPrueba
     {
+
         public static StreamReader Lector;
 
-        public static int[] ConvertirDeTablaArregloEntero(Table table)
+        
+
+        public static int[] ConvertirDeTablaResultadoArregloEntero(Table table)
+
         {
             var resultado = new int[table.RowCount];
             for (int i = 0; i < table.RowCount; i++)
@@ -24,9 +28,10 @@ namespace ExamenllPatronesDiseño
             return resultado;
         }
 
+
         public static List<string> ListaDeOperaciones(Table table)
         {
-            var listaLog=new List<string>();
+            var listaLog = new List<string>();
             string line = "";
             for (int i = 0; i < table.RowCount; i++)
             {
@@ -63,6 +68,21 @@ namespace ExamenllPatronesDiseño
             fileStream.SetLength(0);
             fileStream.Close();
             return listaLogs;
+
+
+        }
+
+        public static List<Comando> ConvertirDeTablaListaComandos(Table table)
+        {
+            var resultado = new List<Comando>();
+            for (int i = 0; i < table.RowCount; i++)
+            {
+                var row = table.Rows[i];
+                resultado.Add(new Comando((TipoOperacion) Enum.Parse(typeof (TipoOperacion), row["Operacion"], true),
+                    Convert.ToInt32(row["Operando1"]), Convert.ToInt32(row["Operando2"])));
+            }
+            return resultado;
+
         }
     }
 }

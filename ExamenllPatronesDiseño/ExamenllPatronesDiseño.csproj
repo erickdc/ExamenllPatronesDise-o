@@ -59,17 +59,13 @@
     <Compile Include="ArchivoTexto.cs" />
     <Compile Include="Comando.cs" />
     <Compile Include="Component\Log.cs" />
-    <Compile Include="ConcreteDecorator\MultiplicadorLog.cs" />
     <Compile Include="ConcreteComponent\OperadorLog.cs" />
+    <Compile Include="ConcreteDecorator\MultiplicadorLog.cs" />
     <Compile Include="ConcreteDecorator\RestadorLog.cs" />
     <Compile Include="ConcreteDecorator\SumadorLog.cs" />
     <Compile Include="CreadorOperaciones.cs" />
     <Compile Include="Decorator\OperacionLog.cs" />
-    <Compile Include="EjecutadorComandos1.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EjecutadorComandos.feature</DependentUpon>
-    </Compile>
+    <Compile Include="EjecutadorComandos1.feature.cs" />
     <Compile Include="EjecutadorComandosPasos.cs" />
     <Compile Include="IOperacion.cs" />
     <Compile Include="Iterador\ICalculadora.cs" />
@@ -84,7 +80,6 @@
     </Compile>
     <Compile Include="LogDecoratorPatternSteps.cs" />
     <Compile Include="Multiplicador.cs" />
-    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restador.cs" />
     <Compile Include="Sumador.cs" />
@@ -94,7 +89,7 @@
     <None Include="App.config" />
     <None Include="EjecutadorComandos.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>EjecutadorComandos1.feature.cs</LastGenOutput>
+      <LastGenOutput>EjecutadorComandos.feature.cs</LastGenOutput>
     </None>
     <None Include="LogDecoratorPattern.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -102,7 +97,6 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
