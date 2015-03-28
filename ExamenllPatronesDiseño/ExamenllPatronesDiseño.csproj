@@ -58,6 +58,11 @@
   <ItemGroup>
     <Compile Include="CreadorOperaciones.cs" />
     <Compile Include="IOperacion.cs" />
+    <Compile Include="Iterador\ICalculadora.cs" />
+    <Compile Include="Iterador\IIterador.cs" />
+    <Compile Include="Iterador\MultiplicadorIterador.cs" />
+    <Compile Include="Iterador\RestadorIterador.cs" />
+    <Compile Include="Iterador\SumadorIterador.cs" />
     <Compile Include="Multiplicador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restador.cs" />
