@@ -20,5 +20,8 @@ namespace ExamenllPatronesDiseño
         {
             return new MultiplicadorIterador(Multiplicaciones);
         }
+
+
+        
     }
 }

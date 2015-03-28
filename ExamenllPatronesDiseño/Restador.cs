@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExamenllPatronesDiseño.Component;
 using ExamenllPatronesDiseño.Iterador;
 
 namespace ExamenllPatronesDiseño
 {
-    class Restador : IOperacion, ICalculadora
+    class Restador : Log, IOperacion, ICalculadora
     {
         public List<string> Restas { get; set; }
 
@@ -19,6 +20,11 @@ namespace ExamenllPatronesDiseño
         public IIterador CrearIterador()
         {
             return new RestadorIterador(Restas);
+        }
+
+        public override void WriteLog()
+        {
+            throw new NotImplementedException();
         }
     }
 }
