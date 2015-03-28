@@ -8,7 +8,7 @@ using ExamenllPatronesDiseño.Iterador;
 
 namespace ExamenllPatronesDiseño
 {
-    class Restador : Log, IOperacion, ICalculadora
+    class Restador : IOperacion, ICalculadora
     {
         public List<string> Restas { get; set; }
 
@@ -22,9 +22,6 @@ namespace ExamenllPatronesDiseño
             return new RestadorIterador(Restas);
         }
 
-        public override void WriteLog()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

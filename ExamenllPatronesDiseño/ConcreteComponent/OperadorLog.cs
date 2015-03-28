@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ExamenllPatronesDiseño.Component;
+using NUnit.Framework;
 
 namespace ExamenllPatronesDiseño.ConcreteComponent
 {
-    class SumadorLog : Log
+    class OperadorLog: Log
     {
-        public override void WriteLog()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

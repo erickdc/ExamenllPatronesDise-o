@@ -15,4 +15,3 @@ C:\Users\dell\Documents\GitHub\Examen2_IngSoft\ExamenllPatronesDiseño\bin\Debug
 C:\Users\dell\Documents\GitHub\Examen2_IngSoft\ExamenllPatronesDiseño\bin\Debug\nunit.framework.xml
 C:\Users\dell\Documents\GitHub\Examen2_IngSoft\ExamenllPatronesDiseño\obj\Debug\ExamenllPatronesDiseño.dll
 C:\Users\dell\Documents\GitHub\Examen2_IngSoft\ExamenllPatronesDiseño\obj\Debug\ExamenllPatronesDiseño.pdb
-C:\Users\dell\Documents\GitHub\Examen2_IngSoft\ExamenllPatronesDiseño\obj\Debug\ExamenllPatronesDiseño.csprojResolveAssemblyReference.cache

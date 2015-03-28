@@ -87,5 +87,8 @@ namespace ExamenllPatronesDiseño
         {
             CollectionAssert.AreEqual(UtilidadPrueba.ConvertirDeTablaArregloEntero(table), _resultadoListaOperaciones);
         }
+
+        
+
     }
 }
