@@ -70,12 +70,12 @@ namespace ExamenllPatronesDiseño
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ejecutamos una serie de operaciones aritmeticas")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ejecutamos una serie de operaciones matematicas")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "LogDecoratorPattern")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
-        public virtual void EjecutamosUnaSerieDeOperacionesAritmeticas()
+        public virtual void EjecutamosUnaSerieDeOperacionesMatematicas()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ejecutamos una serie de operaciones aritmeticas", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ejecutamos una serie de operaciones matematicas", new string[] {
                         "mytag"});
 #line 7
 this.ScenarioSetup(scenarioInfo);

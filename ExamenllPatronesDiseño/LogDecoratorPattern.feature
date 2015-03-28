@@ -4,7 +4,7 @@
 	un log con todas las operaciones ejecutadas
 
 @mytag
-Scenario: Ejecutamos una serie de operaciones aritmeticas
+Scenario: Ejecutamos una serie de operaciones matematicas
 	Given  que se hayan ejecutado las siguientes operaciones con los siguientes resultados
 	| Operacion		| Resultado |
 	| Suma			| 4         |
