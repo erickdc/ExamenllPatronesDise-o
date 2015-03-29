@@ -6,4 +6,3 @@ C:\Users\Erick\Documents\BitBucket\ExamenllPatronesDise-o\ExamenllPatronesDiseñ
 C:\Users\Erick\Documents\BitBucket\ExamenllPatronesDise-o\ExamenllPatronesDiseño\bin\Debug\nunit.framework.xml
 C:\Users\Erick\Documents\BitBucket\ExamenllPatronesDise-o\ExamenllPatronesDiseño\obj\Debug\ExamenllPatronesDiseño.dll
 C:\Users\Erick\Documents\BitBucket\ExamenllPatronesDise-o\ExamenllPatronesDiseño\obj\Debug\ExamenllPatronesDiseño.pdb
-C:\Users\Erick\Documents\BitBucket\ExamenllPatronesDise-o\ExamenllPatronesDiseño\obj\Debug\ExamenllPatronesDiseño.csprojResolveAssemblyReference.cache

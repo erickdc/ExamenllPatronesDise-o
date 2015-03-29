@@ -19,7 +19,7 @@ namespace ExamenllPatronesDiseño
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class EjecutadorComandosFeature
+    public partial class EjecutadorComandosPasosFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace ExamenllPatronesDiseño
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "EjecutadorComandos", "Para poder realizar operaciones aritmeticas\nComo estudiante quiero ver\nla suma ,r" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "EjecutadorComandosPasos", "Para poder realizar operaciones aritmeticas\nComo estudiante quiero ver\nla suma ,r" +
                     "esta y multiplicacion de dos operandos", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -47,9 +47,9 @@ namespace ExamenllPatronesDiseño
         public virtual void TestInitialize()
         {
             if (((TechTalk.SpecFlow.FeatureContext.Current != null) 
-                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "EjecutadorComandos")))
+                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "EjecutadorComandosPasos")))
             {
-                ExamenllPatronesDiseño.EjecutadorComandosFeature.FeatureSetup(null);
+                ExamenllPatronesDiseño.EjecutadorComandosPasosFeature.FeatureSetup(null);
             }
         }
         
@@ -71,7 +71,7 @@ namespace ExamenllPatronesDiseño
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Sumar dos numeros")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandos")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandosPasos")]
         public virtual void SumarDosNumeros()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sumar dos numeros", ((string[])(null)));
@@ -89,7 +89,7 @@ this.ScenarioSetup(scenarioInfo);
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Restar dos numeros")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandos")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandosPasos")]
         public virtual void RestarDosNumeros()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Restar dos numeros", ((string[])(null)));
@@ -107,7 +107,7 @@ this.ScenarioSetup(scenarioInfo);
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Mutiplicar dos numeros")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandos")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandosPasos")]
         public virtual void MutiplicarDosNumeros()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Mutiplicar dos numeros", ((string[])(null)));
@@ -125,7 +125,7 @@ this.ScenarioSetup(scenarioInfo);
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ejecutar Lista de operaciones Aritmeticas")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandos")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandosPasos")]
         public virtual void EjecutarListaDeOperacionesAritmeticas()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ejecutar Lista de operaciones Aritmeticas", ((string[])(null)));
@@ -133,21 +133,21 @@ this.ScenarioSetup(scenarioInfo);
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Operacion",
                         "Operando1",
-                        "Operando2",
-                        "Operacion"});
+                        "Operando2"});
             table1.AddRow(new string[] {
+                        "Suma",
                         "1",
-                        "3",
-                        "Suma"});
+                        "3"});
             table1.AddRow(new string[] {
+                        "Resta",
                         "5",
-                        "6",
-                        "Resta"});
+                        "6"});
             table1.AddRow(new string[] {
+                        "Multiplicacion",
                         "3",
-                        "4",
-                        "Multiplicacion"});
+                        "4"});
 #line 23
  testRunner.Given("la lista de operaciones aritmeticas", ((string)(null)), table1, "Given ");
 #line 29
@@ -163,6 +163,50 @@ this.ScenarioSetup(scenarioInfo);
                         "12"});
 #line 31
  testRunner.Then("este resultado debe aparecer", ((string)(null)), table2, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ejecutar Lista de operaciones Aritmeticas Desde Archivo")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EjecutadorComandosPasos")]
+        public virtual void EjecutarListaDeOperacionesAritmeticasDesdeArchivo()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ejecutar Lista de operaciones Aritmeticas Desde Archivo", ((string[])(null)));
+#line 37
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Operacion",
+                        "Operando1",
+                        "Operando2"});
+            table3.AddRow(new string[] {
+                        "Suma",
+                        "1",
+                        "3"});
+            table3.AddRow(new string[] {
+                        "Resta",
+                        "5",
+                        "6"});
+            table3.AddRow(new string[] {
+                        "Multiplicacion",
+                        "3",
+                        "4"});
+#line 38
+ testRunner.Given("la lista de operaciones aritmeticas guardadas en el archivo", ((string)(null)), table3, "Given ");
+#line 44
+ testRunner.When("Se ejecutan todas las operaciones que salen del archivo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Resultado"});
+            table4.AddRow(new string[] {
+                        "4"});
+            table4.AddRow(new string[] {
+                        "-1"});
+            table4.AddRow(new string[] {
+                        "12"});
+#line 46
+ testRunner.Then("este resultado debe ser el siguiente", ((string)(null)), table4, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

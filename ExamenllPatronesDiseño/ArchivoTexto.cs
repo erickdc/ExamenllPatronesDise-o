@@ -58,6 +58,11 @@ namespace ExamenllPatronesDiseño
             }
             return listaComandos;
         }
+
+        public void LimpiarArchivo()
+        {
+            File.Open(NombreArchivo, FileMode.Create).Close();
+        }
     }
 }
 

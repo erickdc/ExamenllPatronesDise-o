@@ -59,7 +59,11 @@
     <Compile Include="ArchivoTexto.cs" />
     <Compile Include="Comando.cs" />
     <Compile Include="CreadorOperaciones.cs" />
-    <Compile Include="EjecutadorComandos.feature.cs" />
+    <Compile Include="EjecutadorComandos.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EjecutadorComandos.feature</DependentUpon>
+    </Compile>
     <Compile Include="EjecutadorComandosPasos.cs" />
     <Compile Include="IOperacion.cs" />
     <Compile Include="Iterador\ICalculadora.cs" />
@@ -75,6 +79,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="EjecutadorComandos.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EjecutadorComandos.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>
