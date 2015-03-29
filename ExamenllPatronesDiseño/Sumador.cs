@@ -9,16 +9,27 @@ namespace ExamenllPatronesDiseño
 {
     class Sumador:IOperacion,ICalculadora
     {
-        public List<string> Sumas { get; set; }
+        public List<Comando> Sumas { get; set; }
+        public IIterador Iterador;
 
         public int Operar(int operando1, int operando2)
         {
             return operando1 + operando2;
         }
 
-        public IIterador CrearIterador()
+        public void LlenarLista(List<Comando> comandos)
         {
-            return new SumadorIterador(Sumas);
+            Sumas = comandos;
+        }
+
+        public List<Comando> DevolverComandos()
+        {
+            return Sumas;
+        }
+
+        public void CrearIterador()
+        {
+            Iterador= new SumadorIterador(Sumas);
         }
     }
 }

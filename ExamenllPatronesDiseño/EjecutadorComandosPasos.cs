@@ -65,7 +65,6 @@ namespace ExamenllPatronesDiseño
         [When(@"Se ejecutan todas las operaciones")]
         public void WhenSeEjecutanTodasLasOperaciones()
         {
-
             _resultadoListaOperaciones = new int[_tablaOperaciones.RowCount];
             for (int i = 0; i < _tablaOperaciones.RowCount; i++)
             {

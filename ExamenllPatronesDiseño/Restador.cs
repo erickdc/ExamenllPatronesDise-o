@@ -9,16 +9,29 @@ namespace ExamenllPatronesDiseño
 {
     class Restador : IOperacion, ICalculadora
     {
-        public List<string> Restas { get; set; }
+        public List<Comando> Restas { get; set; }
+        public IIterador Iterador;
+
 
         public int Operar(int operando1, int operando2)
         {
            return operando1-operando2;
         }
 
-        public IIterador CrearIterador()
+        public void LlenarLista(List<Comando> comandos)
         {
-            return new RestadorIterador(Restas);
+            Restas = comandos;
+        }
+
+        public List<Comando> DevolverComandos()
+        {
+            return Restas;
+        }
+
+
+        public void CrearIterador()
+        {
+            Iterador= new RestadorIterador(Restas);
         }
     }
 }

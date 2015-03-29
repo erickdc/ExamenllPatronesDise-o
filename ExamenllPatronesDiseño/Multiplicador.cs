@@ -9,16 +9,26 @@ namespace ExamenllPatronesDiseño
 {
     class Multiplicador : IOperacion, ICalculadora
     {
-        public List<string> Multiplicaciones { get; set; }
-
+        public List<Comando> Multiplicaciones { get; set; }
+        public IIterador Iterador;
         public int Operar(int operando1, int operando2)
         {
             return operando1*operando2;
         }
 
-        public IIterador CrearIterador()
+        public void LlenarLista(List<Comando> comandos)
         {
-            return new MultiplicadorIterador(Multiplicaciones);
+            Multiplicaciones = comandos;
+        }
+
+        public List<Comando> DevolverComandos()
+        {
+            return Multiplicaciones;
+        }
+
+        public void CrearIterador()
+        {
+            Iterador=new MultiplicadorIterador(Multiplicaciones);
         }
     }
 }

@@ -8,21 +8,21 @@ namespace ExamenllPatronesDiseño.Iterador
 {
     public class SumadorIterador:IIterador
     {
-        private List<string> _sumas;
+        private List<Comando> _sumas;
         private int _posicion;
 
-        public SumadorIterador(List<string> sumas)
+        public SumadorIterador(List<Comando> sumas)
         {
             _sumas = sumas;
             _posicion = 0;
         }
 
-        public void Primero()
+        public void IrAlInicio()
         {
             _posicion = 0;
         }
 
-        public string Siguiente()
+        public Comando Siguiente()
         {
             return _sumas.ElementAt(_posicion++);
         }
@@ -32,7 +32,7 @@ namespace ExamenllPatronesDiseño.Iterador
             return _posicion >= _sumas.Count;
         }
 
-        public string ItemActual()
+        public Comando ItemActual()
         {
             return _sumas.ElementAt(_posicion);
         }

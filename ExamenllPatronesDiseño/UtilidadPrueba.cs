@@ -29,5 +29,18 @@ namespace ExamenllPatronesDiseño
             }
             return resultado;
         }
+
+        public static List<Comando> DevolverComandoPorTipo(List<Comando> comandos,TipoOperacion tipo)
+        {
+            List<Comando> comandosARetornar=new List<Comando>();
+            foreach (var comando in comandos)
+            {
+                if (comando.Tipo.Equals(tipo))
+                    comandosARetornar.Add(comando);
+            }
+
+            return comandosARetornar;
+        }
+
     }
 }

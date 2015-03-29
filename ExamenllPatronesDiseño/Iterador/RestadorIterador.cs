@@ -8,20 +8,20 @@ namespace ExamenllPatronesDiseño.Iterador
 {
     public class RestadorIterador:IIterador
     {
-        private List<string> _restas;
+        private List<Comando> _restas;
         private int _posicion;
-        public RestadorIterador(List<string> restas)
+        public RestadorIterador(List<Comando> restas)
         {
             _restas = restas;
             _posicion = 0;
         }
 
-        public void Primero()
+        public void IrAlInicio()
         {
             _posicion = 0;
         }
 
-        public string Siguiente()
+        public Comando Siguiente()
         {
             return _restas.ElementAt(_posicion++);
         }
@@ -31,7 +31,7 @@ namespace ExamenllPatronesDiseño.Iterador
             return _posicion >= _restas.Count;
         }
 
-        public string ItemActual()
+        public Comando ItemActual()
         {
             return _restas.ElementAt(_posicion);
         }

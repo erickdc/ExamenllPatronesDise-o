@@ -59,6 +59,31 @@ namespace ExamenllPatronesDiseño
             return listaComandos;
         }
 
+        public List<Comando> DevolverListaComandosPorOperacion(TipoOperacion tipo)
+        {
+            Lector = new StreamReader(new FileStream(NombreArchivo, FileMode.OpenOrCreate, FileAccess.ReadWrite));
+            string linea = "";
+            var listaComandos = new List<Comando>();
+            while (linea != null)
+            {
+                linea = Lector.ReadLine();
+                var operacion = new string[3];
+                if (linea != null)
+                {
+                    operacion = linea.Split(null);
+                    var tipoOperacion = (TipoOperacion)Enum.Parse(typeof(TipoOperacion), operacion[0]);
+                    if (tipoOperacion.Equals(tipo))
+                    {
+                        listaComandos.Add(new Comando(tipoOperacion,
+                            Convert.ToInt32(operacion[1]),
+                            Convert.ToInt32(operacion[2])));
+                    }
+                }
+
+            }
+            return listaComandos;
+        }
+
         public void LimpiarArchivo()
         {
             File.Open(NombreArchivo, FileMode.Create).Close();

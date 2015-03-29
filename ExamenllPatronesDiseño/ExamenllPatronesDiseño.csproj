@@ -66,6 +66,12 @@
     </Compile>
     <Compile Include="EjecutadorComandosPasos.cs" />
     <Compile Include="IOperacion.cs" />
+    <Compile Include="Iterador.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Iterador.feature</DependentUpon>
+    </Compile>
+    <Compile Include="IteradorPasos.cs" />
     <Compile Include="Iterador\ICalculadora.cs" />
     <Compile Include="Iterador\IIterador.cs" />
     <Compile Include="Iterador\MultiplicadorIterador.cs" />
@@ -82,6 +88,10 @@
     <None Include="EjecutadorComandos.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EjecutadorComandos.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Iterador.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Iterador.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
