@@ -8,6 +8,6 @@ namespace ExamenllPatronesDiseño.Iterador
 {
     interface ICalculadora
     {
-       void CrearIterador();
+        IIterador CrearIterador();
     }
 }

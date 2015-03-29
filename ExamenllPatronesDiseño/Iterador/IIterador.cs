@@ -8,9 +8,9 @@ namespace ExamenllPatronesDiseño.Iterador
 {
     public interface IIterador
     {
-        void IrAlInicio();
-        Comando Siguiente();
+        void Primero();
+        string Siguiente();
         bool ATerminado();
-        Comando ItemActual();
+        string ItemActual();
     }
 }

@@ -56,36 +56,30 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ArchivoTexto.cs" />
-    <Compile Include="Comando.cs" />
-    <Compile Include="Component\Log.cs" />
-    <Compile Include="ConcreteComponent\OperadorLog.cs" />
-    <Compile Include="ConcreteDecorator\MultiplicadorLog.cs" />
-    <Compile Include="ConcreteDecorator\RestadorLog.cs" />
-    <Compile Include="ConcreteDecorator\SumadorLog.cs" />
     <Compile Include="CreadorOperaciones.cs" />
-    <Compile Include="Decorator\OperacionLog.cs" />
-    <Compile Include="EjecutadorComandos1.feature.cs" />
-    <Compile Include="EjecutadorComandosPasos.cs" />
-    <Compile Include="IOperacion.cs" />
-    <Compile Include="Iterador.feature.cs">
+    <Compile Include="EjecutadorComandos.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Iterador.feature</DependentUpon>
+      <DependentUpon>EjecutadorComandos.feature</DependentUpon>
     </Compile>
-    <Compile Include="IteradorPasos.cs" />
+    <Compile Include="EjecutadorComandosPasos.cs" />
+    <Compile Include="IOperacion.cs" />
     <Compile Include="Iterador\ICalculadora.cs" />
     <Compile Include="Iterador\IIterador.cs" />
     <Compile Include="Iterador\MultiplicadorIterador.cs" />
     <Compile Include="Iterador\RestadorIterador.cs" />
     <Compile Include="Iterador\SumadorIterador.cs" />
-    <Compile Include="LogDecoratorPattern.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LogDecoratorPattern.feature</DependentUpon>
-    </Compile>
-    <Compile Include="LogDecoratorPatternSteps.cs" />
     <Compile Include="Multiplicador.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Patron Observador\ImplementacionDePatronesDeDisenoObservadorSteps.cs" />
+    <Compile Include="Patron Observador\IObservador.cs" />
+    <Compile Include="Patron Observador\ISujeto.cs" />
+    <Compile Include="Patron Observador\ObservadorMultiplicacion.cs" />
+    <Compile Include="Patron Observador\ObservadorResta.cs" />
+    <Compile Include="Patron Observador\ObservadorSuma.cs" />
+    <Compile Include="Patron Observador\Sujeto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restador.cs" />
     <Compile Include="Sumador.cs" />
@@ -93,21 +87,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\ExamenllPatronesDiseño.dll.config" />
     <None Include="EjecutadorComandos.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EjecutadorComandos.feature.cs</LastGenOutput>
     </None>
-
-    <None Include="Iterador.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Iterador.feature.cs</LastGenOutput>
-    </None>
-    <None Include="LogDecoratorPattern.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>LogDecoratorPattern.feature.cs</LastGenOutput>
-
-    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ExamenllPatronesDiseño.csprojResolveAssemblyReference.cache" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ExamenllPatronesDiseño.dll" />
+    <Content Include="bin\Debug\ExamenllPatronesDiseño.pdb" />
+    <Content Include="bin\Debug\nunit.framework.dll" />
+    <Content Include="bin\Debug\nunit.framework.xml" />
+    <Content Include="bin\Debug\TechTalk.SpecFlow.dll" />
+    <Content Include="obj\Debug\ExamenllPatronesDiseño.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ExamenllPatronesDiseño.dll" />
+    <Content Include="obj\Debug\ExamenllPatronesDiseño.pdb" />
+    <Content Include="obj\Debug\TempPE\EjecutadorComandos.feature.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
