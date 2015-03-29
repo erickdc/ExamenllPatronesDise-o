@@ -15,7 +15,5 @@ namespace ExamenllPatronesDiseño
     interface IOperacion
     {
         int Operar(int operando1, int operando2);
-        void LlenarLista(List<Comando> comandos );
-        List<Comando> DevolverComandos();
     }
 }
