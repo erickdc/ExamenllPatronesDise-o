@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExamenllPatronesDiseño.Component;
 using ExamenllPatronesDiseño.Iterador;
 
 namespace ExamenllPatronesDiseño
@@ -33,5 +34,7 @@ namespace ExamenllPatronesDiseño
         {
             Iterador= new RestadorIterador(Restas);
         }
+
+        
     }
 }

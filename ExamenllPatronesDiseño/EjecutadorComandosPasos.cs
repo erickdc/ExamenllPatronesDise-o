@@ -119,5 +119,8 @@ namespace ExamenllPatronesDiseño
         {
             CollectionAssert.AreEqual(UtilidadPrueba.ConvertirDeTablaResultadoArregloEntero(table), _resultadoListaOperacionesArchivo);
         }
+
+        
+
     }
 }
